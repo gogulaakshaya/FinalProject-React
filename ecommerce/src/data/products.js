@@ -203,4 +203,55 @@ export const products = [
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=700"
   }
+
+  {
+    id: 25,
+    name: "Royal Pearl Drop Earrings",
+    price: 1899,
+    category: "Jewellery",
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=700"
+  },
+  {
+    id: 26,
+    name: "Golden Heritage Necklace",
+    price: 2799,
+    category: "Jewellery",
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=700"
+  },
+  {
+    id: 27,
+    name: "Elegant Diamond-Style Bracelet",
+    price: 2299,
+    category: "Jewellery",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=700"
+  },
+  {
+    id: 28,
+    name: "Royal Gold Statement Ring",
+    price: 1699,
+    category: "Jewellery",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700"
+  },
+  {
+    id: 29,
+    name: "Classic Layered Gold Chain",
+    price: 1999,
+    category: "Jewellery",
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700"
+  },
+  {
+    id: 30,
+    name: "Vintage Luxury Earrings",
+    price: 2499,
+    category: "Jewellery",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?w=700"
+  }
+
 ];
+

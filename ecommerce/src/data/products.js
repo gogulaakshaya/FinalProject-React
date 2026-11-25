@@ -202,8 +202,7 @@ export const products = [
     category: "Skincare",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=700"
-  }
-
+  },
   {
     id: 25,
     name: "Royal Pearl Drop Earrings",

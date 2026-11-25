@@ -32,8 +32,10 @@ jobs:
         working-directory: ecommerce
 
       - name: Build project
-        run: npm run build
-        working-directory: ecommerce
+         run: npm run build
+          working-directory: ecommerce
+          env:
+          GITHUB_PAGES: 'true'
 
       - name: Upload build
         uses: actions/upload-pages-artifact@v3

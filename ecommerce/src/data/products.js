@@ -20,7 +20,7 @@ export const products = [
   {
     id: 3,
     name: "Champagne Satin Blazer",
-    price: 5499,
+    price: 5666,
     category: "Formal Wear",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1598808503746-f34c53b9323e?w=700"

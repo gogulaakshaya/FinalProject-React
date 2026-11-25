@@ -1,50 +1,53 @@
-# KL E-Commerce Store — React + Vite
+# KL E-Commerce Store
 
-This project follows the supplied student reference: React functional components, `useState`, form `onChange`/`onSubmit`, Local Storage, conditional rendering, `map()`, and CSS Grid. It also keeps the expanded KL store features.
+A React + Vite shopping application developed as a three-member team project. The application demonstrates registration and login, product discovery, cart operations, checkout, order tracking and basic store administration.
 
-## Run
-```bash
-npm install
-npm run dev
-```
+## Run the project
+
+1. Extract the ZIP file.
+2. Open the extracted `KL-Ecommerce-Complete` folder in VS Code.
+3. Open a terminal in that folder.
+4. Run `npm install`.
+5. Run `npm run dev` and open the local URL shown by Vite.
+
+## Team responsibilities
+
+### Member 1 – Authentication & Checkout
+- User registration, login and logout
+- Admin login
+- Password visibility toggle and form validation
+- Display the logged-in user's name
+- Delivery address form and order summary
+- Quantity and price calculation
+- Cash on Delivery and clearly labelled demo payment option
+- Place Order and order confirmation
+- My Orders with order status tracking
+
+### Member 2 – Admin Module
+- Admin dashboard
+- Registered user details
+- Total orders, order value and completed-order revenue
+- Customer order and delivery details
+- Update order status: Pending, Processing, Completed or Cancelled
+- Basic sales overview
+
+### Member 3 – Shopping Module
+- Product listing and product details
+- Product search and category filtering
+- Price and name sorting
+- Shopping cart with quantity controls
+- Wishlist
 
 ## Demo credentials
-- Admin username: `admin`
-- Admin password: `admin123`
-- Demo user: `gogulaakshaya1@gmail.com` / `admin123`
-- Demo user: `sindhu@gmail.com` / `sindhu143`
 
-Users can also register a new account.
+- **Admin:** username `admin`, password `admin123`
+- **Demo user:** `gogulaakshaya1@gmail.com`, password `admin123`
+- **Demo user:** `sindhu@gmail.com`, password `sindhu143`
 
-## Reference-style source structure
-```text
-src/
-├── components/
-│   ├── Register.jsx
-│   ├── Login.jsx
-│   ├── Admin.jsx
-│   ├── Products.jsx
-│   ├── Header.jsx
-│   ├── ProductCard.jsx
-│   ├── ProductList.jsx
-│   └── Cart.jsx
-├── data/
-│   └── products.js
-├── pages/
-│   └── AdminDashboard.jsx
-├── App.jsx
-├── App.css
-├── style.css
-└── main.jsx
-```
+You can also register a new user account.
 
-## Features
-- Guest browsing, product search and category filters
-- Registration, user login, password reset, and logout
-- Product cards with consistent width for categories containing 1–2 products
-- Cart and order placement
-- Admin dashboard with registered users and orders
-- Local Storage persistence for demo users and orders
+## Important project notes
 
-## Security
-This is a frontend classroom demo. Local Storage is not secure for real authentication or passwords. A production store should use a backend, password hashing, HTTPS, and proper authorization.
+- User records, the current login session, wishlist and orders use browser Local Storage for this classroom demonstration. The cart is held in React state while the app is running.
+- Online Payment is only a simulated demonstration option. It does not connect to a real bank or payment gateway.
+- This is a frontend-only project. Real deployment would require a backend, secure password handling, server-side authorization and a payment provider.

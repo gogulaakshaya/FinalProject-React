@@ -1,6 +1,6 @@
 const money = value => `₹${Number(value).toLocaleString("en-IN")}`;
 
-export default function OrderSuccess({ order, onContinue }) {
+export default function OrderSuccess({ order, onContinue, onViewOrders }) {
   return (
     <main className="content-section order-success-page">
       <section className="success-card">
@@ -18,7 +18,7 @@ export default function OrderSuccess({ order, onContinue }) {
           <div><span>Items</span><strong>{order.items.reduce((sum, item) => sum + Number(item.quantity || 0), 0)}</strong></div>
         </div>
         <div className="success-delivery"><strong>Delivering to</strong><p>{order.delivery.name}, {order.delivery.phone}<br />{order.delivery.address}, {order.delivery.city} – {order.delivery.pincode}</p></div>
-        <button className="primary-button full-button" onClick={onContinue}>Continue Shopping</button>
+        <div className="success-actions"><button className="primary-button" onClick={onContinue}>Continue Shopping</button><button className="outline-button" onClick={onViewOrders}>View My Orders</button></div>
       </section>
     </main>
   );

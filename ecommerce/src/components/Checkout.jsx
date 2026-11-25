@@ -24,6 +24,10 @@ export default function Checkout({ cart, user, onBack, onPlaceOrder }) {
       setError("Your cart is empty. Add products before checkout.");
       return;
     }
+    if (!details.name.trim() || !details.address.trim() || !details.city.trim()) {
+      setError("Please complete your name, address and city.");
+      return;
+    }
     if (!/^[6-9]\d{9}$/.test(details.phone.trim())) {
       setError("Enter a valid 10-digit mobile number.");
       return;
@@ -33,7 +37,7 @@ export default function Checkout({ cart, user, onBack, onPlaceOrder }) {
       return;
     }
     setError("");
-    onPlaceOrder(details);
+    onPlaceOrder({ ...details, name: details.name.trim(), address: details.address.trim(), city: details.city.trim() });
   }
 
   if (!cart.length) {

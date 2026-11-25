@@ -13,7 +13,7 @@ export default function Cart({ cart, onRemove, onCheckout, onShop }) {
           </div>)}
         </div>
         <div className="cart-total"><span>Total</span><strong>₹{total.toLocaleString("en-IN")}</strong></div>
-        <button className="primary-button" onClick={onCheckout}>Place Order</button>
+        <button className="primary-button" onClick={onCheckout}>Proceed to Checkout</button>
       </>}
     </section>
   );
